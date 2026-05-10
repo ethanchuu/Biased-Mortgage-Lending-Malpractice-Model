@@ -23,4 +23,6 @@ def plot_disparate_approval_rates(summary_df, group_col):
     plt.title(f'Approval Rate by {group_col}')
     plt.xticks(rotation=45)
     plt.tight_layout()
-    plt.show()
+    plt.savefig(f'approval_rates_{group_col}.png')
+    print(f"Approval rates plot saved to approval_rates_{group_col}.png")
+    plt.close()
