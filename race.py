@@ -1,15 +1,14 @@
 import pandas as pd
 
 RACE_CODES = {
-    1: 'White',
-    2: 'Black or African American',
-    3: 'Asian',
-    4: 'American Indian or Alaska Native',
-    5: 'Native Hawaiian or Other Pacific Islander',
-    6: 'Other',
-    7: 'Not Provided',
-    8: 'Not Applicable',
-    9: 'No Co-Applicant'
+    1: 'American Indian or Alaska Native',
+    2: 'Asian',
+    3: 'Black or African American',
+    4: 'Native Hawaiian or Other Pacific Islander',
+    5: 'White',
+    6: 'Information Not Provided',
+    7: 'Not Applicable',
+    8: 'No Co-Applicant'
 }
 
 def map_race_column(df, col='applicant_race_1'):
