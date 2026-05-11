@@ -59,7 +59,8 @@ def plot_feature_importance(model, X_train):
         plt.barh(features, importances)
         plt.xlabel('Importance')
         plt.title('Feature Importance')
-        plt.savefig('feature_importance.png')
+        plt.tight_layout()
+        plt.savefig('feature_importance.png', bbox_inches='tight')
         print("Feature importance plot saved to feature_importance.png")
         plt.close()
 

@@ -136,15 +136,6 @@ def main():
             print(rates)
 
     # Conclusion
-    print("\n--- Conclusion ---")
-    print("This analysis explored mortgage lending data from 2017 New Jersey HMDA records.")
-    print("Key findings:")
-    print("- Decision Tree and Logistic Regression trained without the leaky loan_amount feature; accuracy reflects true generalization.")
-    print("- KNN provides a non-parametric baseline for comparison.")
-    print("- Feature importance revealed loan amount and applicant income as key predictors.")
-    print("- Fairness analysis revealed potential disparities in predicted default rates across racial groups.")
-    print("Limitations: Synthetic target variable (loan > 200K), limited features, no temporal validation, class imbalance.")
-    print("Recommendations: Use real default data, incorporate more features, deploy model with continuous bias monitoring.")
     print()
     print()
 
